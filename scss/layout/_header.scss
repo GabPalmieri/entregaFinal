@@ -1,0 +1,40 @@
+header{
+    width: 90%;
+    margin: 0 auto 35px auto;
+}
+
+.header__iconos{
+    text-align: right;
+    display: block;
+    margin-right: 0;
+    ul{
+        list-style: none;
+        li{
+            display: inline-block;
+            padding: 15px 0 0 5px;
+        }
+        
+    }
+}
+
+.iconos:hover{
+    transform: scale(1.25);
+    transition-duration: 2s;
+}
+
+.header__logo{
+    position: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 50px auto 50px auto;
+    img{
+        position: relative;
+        display: block;
+        margin: 10px auto 10px auto;
+        max-width: 170px;
+        
+    
+    }
+
+}
+

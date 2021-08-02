@@ -1,0 +1,314 @@
+/**comienza main index**/
+
+.rowBurgerSandwich{
+    margin: 25px auto 15px auto;
+}
+
+.imagenBurger{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 1s;
+}
+
+.descripcionBurger{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-left: 15px;
+    margin-right: 15px;
+    height: 400px;
+    .descripcionBurger__nombre{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    
+        img{
+            max-width: 200px;
+        }
+    }
+    
+    .descripcionBurger__detalle{
+        margin-top: 25px;
+        margin-bottom: 25px;
+        p{
+            font-family: $font_principal;
+            color: $color_font;
+            letter-spacing: 2px;
+            font-size: 0.9rem;
+            line-height: 30px;
+            font-weight: 200;
+            text-align: center;
+        }
+    }
+}
+
+
+
+
+/**finaliza main index**/
+
+/**comienza main menu**/
+
+.main__menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto 0 auto;
+
+    .h4__tabla{
+        font-family: $font_principal;
+        font-weight: 400;
+        font-style: italic;
+        font-size: 14px;
+        letter-spacing: 3px;
+        text-align: center;
+        margin-top: 5px;
+        color: $color_secundario;
+    
+    }
+    .menuGrid__Burger{
+        display: flex;
+        justify-content: center;
+        width: 80%;
+        
+        .grid-container {
+            display: grid;
+            max-width: 730px;
+            margin-bottom: 45px;
+            grid-template-columns: 3fr 1fr 1fr 1fr;
+            grid-template-rows: 0.5fr 1fr 1fr 1fr 1fr 1fr;
+            row-gap: 15px;
+            grid-template-areas:
+              "Detalle Detalle Detalle Detalle"
+              "Detalle-C Simple-C Doble-c Triple-C"
+              "Detalle-R Simple-R Doble-R Triple-R"
+              "Detalle-Dc Simple-Dc Doble-Dc Triple-Dc"
+              "Detalle-P Simple-P Doble-P Triple-P"
+              "Detalle-V Simple-V Doble-V Triple-V";
+          
+              .Detalle img{
+                max-width: 100%;
+            } 
+
+            .Detalle { grid-area: Detalle; align-self: end; }
+  
+            .Detalle-C { grid-area: Detalle-C; }
+            
+            .Simple-C { grid-area: Simple-C; }
+            
+            .Doble-c { grid-area: Doble-c;  }
+            
+            .Triple-C { grid-area: Triple-C;  }
+            
+            .Detalle-R { grid-area: Detalle-R; }
+            
+            .Simple-R { grid-area: Simple-R;  }
+            
+            .Doble-R { grid-area: Doble-R; }
+            
+            .Triple-R { grid-area: Triple-R;  }
+            
+            .Detalle-Dc { grid-area: Detalle-Dc; }
+            
+            .Simple-Dc { grid-area: Simple-Dc;  }
+            
+            .Doble-Dc { grid-area: Doble-Dc;  }
+            
+            .Triple-Dc { grid-area: Triple-Dc; }
+            
+            .Detalle-P { grid-area: Detalle-P;  }
+            
+            .Simple-P { grid-area: Simple-P;  }
+            
+            .Doble-P { grid-area: Doble-P;  }
+            
+            .Triple-P { grid-area: Triple-P;  }
+            
+            .Detalle-V { grid-area: Detalle-V; }
+            
+            .Simple-V { grid-area: Simple-V;  }
+            
+            .Doble-V { grid-area: Doble-V; }
+            
+            .Triple-V { grid-area: Triple-V;  }
+            
+            .precio{
+                font-style: italic;
+                font-weight: 600;
+                text-align: end; padding-right: 15px;
+            }
+
+            .nombreMenu{
+                font-style: italic;
+                font-weight: 400;
+                color: #ffaa24;
+                font-size: 14px;
+            }
+
+            p{
+                color: $color_font;
+                font-family: $font_principal;
+                font-weight: 200;
+                font-size: 14px;
+              
+            }
+
+          }
+        
+          .grid-containerS {
+            display: grid;
+            max-width: 730px;
+            grid-template-columns: 3fr 1fr;
+            grid-template-rows: 0.5fr 1fr 1fr 1fr 1fr;
+            row-gap: 15px;
+            grid-auto-flow: row;
+            grid-template-areas:
+              "Detalle Detalle"
+              "Detalle-MB Precio-MB"
+              "Detalle-blt Precio-blt"
+              "Detalle-Cu Precio-Cu"
+              "Detalle-Tq Precio-Tq";
+
+                .precio{
+                    font-style: italic;
+                    font-weight: 600;
+                    text-align: end; padding-right: 15px;
+                }
+
+                .nombreMenu{
+                    font-style: italic;
+                    font-weight: 400;
+                    color: #ffaa24;
+                    font-size: 14px;
+                }
+
+                p{
+                    color: $color_font;
+                    font-family: $font_principal;
+                    font-weight: 200;
+                    font-size: 14px;
+                
+                }
+          }
+          
+          .Detalle { grid-area: Detalle; }
+          
+          .Detalle-MB { grid-area: Detalle-MB; }
+          
+          .Precio-MB { grid-area: Precio-MB; }
+          
+          .Detalle-blt { grid-area: Detalle-blt; }
+          
+          .Precio-blt { grid-area: Precio-blt; }
+          
+          .Detalle-Cu { grid-area: Detalle-Cu; }
+          
+          .Precio-Cu { grid-area: Precio-Cu; }
+          
+          .Detalle-Tq { grid-area: Detalle-Tq; }
+          
+          .Precio-Tq { grid-area: Precio-Tq; }
+          
+
+
+    }
+
+
+}
+
+
+
+
+/**finaliza main menu**/
+
+/**comienza nuestros productos**/
+
+.containerNuestrosProductos{
+    margin-top: 40px;
+
+    .rowNuestrosProductos{
+        margin: 35px auto 35px auto;
+        font-weight: 600;
+        color: white;
+        
+        .nuestrosProductos__individual__texto{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            font-weight: 300;
+ 
+
+        
+        }
+        
+        .nuestrosProductos__individual__imagen{
+            margin: 0 auto 0 auto;
+            width: 90%;
+            max-width: 300px;
+            justify-content: center;
+        
+        }
+        
+        p{
+            color: $color_font;
+        }
+
+    }
+}
+
+
+/**finaliza nuestros productos**/
+
+/**comienza pedidos**/
+
+
+
+.form{
+    width: 75%;
+}
+
+fieldset{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 15px auto 15px auto;
+    padding: 15px 0 15px 0;
+    font-family: $font_principal;
+    font-weight: 200;
+    font-size: 15px;
+    color: #CCCCCC;
+
+
+
+    
+}
+
+legend{
+    color: $color_secundario;
+    padding: 5px 5px 2px 5px;
+    margin-bottom: 10px;
+    border-bottom: $color_principal 3px solid;
+}
+
+.containerFieldset{
+    margin: 10px auto 5px 0;
+}
+
+label{
+    color: #CCCCCC;
+    
+}
+
+textarea{
+    margin: 5px auto 5px auto;
+    width: 70%;
+}
+
+.boton{
+    width: 15%;
+    margin: 5px 0 5px 15px;
+}
+/**finaliza pedidos**/

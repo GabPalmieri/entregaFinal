@@ -1,0 +1,77 @@
+/**comienza titulos index**/
+
+.h1__HamburguesasSandwich{
+
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    margin: 8% 0 5% 0;
+    padding: 6px 0 6px 0;
+    border-bottom: $color_principal 5px solid;
+    color: white;
+    font-family: $font_principal;
+    font-size: 2.25rem;
+    font-weight: 800;
+    letter-spacing: 3px;
+}
+/**finaliza titulos index**/
+
+/**comienza titulos menu**/
+
+.h2__menu{
+    @extend .h1__HamburguesasSandwich;
+    border-bottom: $color_secundario 5px solid;
+}
+
+.h4__tabla{
+    font-family: $font_principal;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 0.9rem;
+    letter-spacing: 3px;
+    text-align: center;
+    margin-top: 5px;
+    color: $color_secundario;
+
+}
+
+/**finaliza titulos menu**/
+
+/**comienza titulos Nuestros Productos**/
+
+.h2__nuestrosProductos{
+    @extend .h1__HamburguesasSandwich;
+    border-bottom: $color_secundario 5px solid;
+}
+
+.h3__nuestrosProductos{
+    margin: 25px auto 35px 0;
+    font-family: $font_principal;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    color: white;
+}
+
+/**finaliza titulos Nuestros Productos**/
+
+/**comienza titulos pedido**/
+
+.h2__pedido{
+    @extend .h2__menu;
+
+}
+
+.h3__pedido{
+    width: 90%;
+    text-align: center;
+    margin: 100px auto 50px auto;
+    padding: 2px 0 2px 0;
+    color: #4FB9AF;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 3px;
+}
+
+/**finaliza titulos pedido**/

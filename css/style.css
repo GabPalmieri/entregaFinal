@@ -1,0 +1,499 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 100%; }
+
+body {
+  background-color: black; }
+
+img {
+  max-width: 100%;
+  height: auto; }
+
+nav ul li a {
+  text-decoration: none;
+  color: white; }
+
+header {
+  width: 90%;
+  margin: 0 auto 35px auto; }
+
+.header__iconos {
+  text-align: right;
+  display: block;
+  margin-right: 0; }
+  .header__iconos ul {
+    list-style: none; }
+    .header__iconos ul li {
+      display: inline-block;
+      padding: 15px 0 0 5px; }
+
+.iconos:hover {
+  transform: scale(1.25);
+  transition-duration: 2s; }
+
+.header__logo {
+  position: flex;
+  justify-content: center;
+  align-content: center;
+  margin: 50px auto 50px auto; }
+  .header__logo img {
+    position: relative;
+    display: block;
+    margin: 10px auto 10px auto;
+    max-width: 170px; }
+
+nav ul li {
+  font-family: "Poppins", sans-serif;
+  color: white;
+  font-weight: 400;
+  letter-spacing: 1px; }
+
+/**comienza titulos index**/
+.h1__HamburguesasSandwich, .h2__menu, .h2__pedido, .h2__nuestrosProductos {
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  margin: 8% 0 5% 0;
+  padding: 6px 0 6px 0;
+  border-bottom: #ffaa24 5px solid;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-size: 2.25rem;
+  font-weight: 800;
+  letter-spacing: 3px; }
+
+/**finaliza titulos index**/
+/**comienza titulos menu**/
+.h2__menu, .h2__pedido {
+  border-bottom: #4FB9AF 5px solid; }
+
+.h4__tabla {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 0.9rem;
+  letter-spacing: 3px;
+  text-align: center;
+  margin-top: 5px;
+  color: #4FB9AF; }
+
+/**finaliza titulos menu**/
+/**comienza titulos Nuestros Productos**/
+.h2__nuestrosProductos {
+  border-bottom: #4FB9AF 5px solid; }
+
+.h3__nuestrosProductos {
+  margin: 25px auto 35px 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  color: white; }
+
+/**finaliza titulos Nuestros Productos**/
+/**comienza titulos pedido**/
+.h3__pedido {
+  width: 90%;
+  text-align: center;
+  margin: 100px auto 50px auto;
+  padding: 2px 0 2px 0;
+  color: #4FB9AF;
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 3px; }
+
+/**finaliza titulos pedido**/
+/**comienza main index**/
+.rowBurgerSandwich {
+  margin: 25px auto 15px auto; }
+
+.imagenBurger {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 1s; }
+
+.descripcionBurger {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-left: 15px;
+  margin-right: 15px;
+  height: 400px; }
+  .descripcionBurger .descripcionBurger__nombre {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; }
+    .descripcionBurger .descripcionBurger__nombre img {
+      max-width: 200px; }
+  .descripcionBurger .descripcionBurger__detalle {
+    margin-top: 25px;
+    margin-bottom: 25px; }
+    .descripcionBurger .descripcionBurger__detalle p {
+      font-family: "Poppins", sans-serif;
+      color: white;
+      letter-spacing: 2px;
+      font-size: 0.9rem;
+      line-height: 30px;
+      font-weight: 200;
+      text-align: center; }
+
+/**finaliza main index**/
+/**comienza main menu**/
+.main__menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto 0 auto; }
+  .main__menu .h4__tabla {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 14px;
+    letter-spacing: 3px;
+    text-align: center;
+    margin-top: 5px;
+    color: #4FB9AF; }
+  .main__menu .menuGrid__Burger {
+    display: flex;
+    justify-content: center;
+    width: 80%; }
+    .main__menu .menuGrid__Burger .grid-container {
+      display: grid;
+      max-width: 730px;
+      margin-bottom: 45px;
+      grid-template-columns: 3fr 1fr 1fr 1fr;
+      grid-template-rows: 0.5fr 1fr 1fr 1fr 1fr 1fr;
+      row-gap: 15px;
+      grid-template-areas: "Detalle Detalle Detalle Detalle" "Detalle-C Simple-C Doble-c Triple-C" "Detalle-R Simple-R Doble-R Triple-R" "Detalle-Dc Simple-Dc Doble-Dc Triple-Dc" "Detalle-P Simple-P Doble-P Triple-P" "Detalle-V Simple-V Doble-V Triple-V"; }
+      .main__menu .menuGrid__Burger .grid-container .Detalle img {
+        max-width: 100%; }
+      .main__menu .menuGrid__Burger .grid-container .Detalle {
+        grid-area: Detalle;
+        align-self: end; }
+      .main__menu .menuGrid__Burger .grid-container .Detalle-C {
+        grid-area: Detalle-C; }
+      .main__menu .menuGrid__Burger .grid-container .Simple-C {
+        grid-area: Simple-C; }
+      .main__menu .menuGrid__Burger .grid-container .Doble-c {
+        grid-area: Doble-c; }
+      .main__menu .menuGrid__Burger .grid-container .Triple-C {
+        grid-area: Triple-C; }
+      .main__menu .menuGrid__Burger .grid-container .Detalle-R {
+        grid-area: Detalle-R; }
+      .main__menu .menuGrid__Burger .grid-container .Simple-R {
+        grid-area: Simple-R; }
+      .main__menu .menuGrid__Burger .grid-container .Doble-R {
+        grid-area: Doble-R; }
+      .main__menu .menuGrid__Burger .grid-container .Triple-R {
+        grid-area: Triple-R; }
+      .main__menu .menuGrid__Burger .grid-container .Detalle-Dc {
+        grid-area: Detalle-Dc; }
+      .main__menu .menuGrid__Burger .grid-container .Simple-Dc {
+        grid-area: Simple-Dc; }
+      .main__menu .menuGrid__Burger .grid-container .Doble-Dc {
+        grid-area: Doble-Dc; }
+      .main__menu .menuGrid__Burger .grid-container .Triple-Dc {
+        grid-area: Triple-Dc; }
+      .main__menu .menuGrid__Burger .grid-container .Detalle-P {
+        grid-area: Detalle-P; }
+      .main__menu .menuGrid__Burger .grid-container .Simple-P {
+        grid-area: Simple-P; }
+      .main__menu .menuGrid__Burger .grid-container .Doble-P {
+        grid-area: Doble-P; }
+      .main__menu .menuGrid__Burger .grid-container .Triple-P {
+        grid-area: Triple-P; }
+      .main__menu .menuGrid__Burger .grid-container .Detalle-V {
+        grid-area: Detalle-V; }
+      .main__menu .menuGrid__Burger .grid-container .Simple-V {
+        grid-area: Simple-V; }
+      .main__menu .menuGrid__Burger .grid-container .Doble-V {
+        grid-area: Doble-V; }
+      .main__menu .menuGrid__Burger .grid-container .Triple-V {
+        grid-area: Triple-V; }
+      .main__menu .menuGrid__Burger .grid-container .precio {
+        font-style: italic;
+        font-weight: 600;
+        text-align: end;
+        padding-right: 15px; }
+      .main__menu .menuGrid__Burger .grid-container .nombreMenu {
+        font-style: italic;
+        font-weight: 400;
+        color: #ffaa24;
+        font-size: 14px; }
+      .main__menu .menuGrid__Burger .grid-container p {
+        color: white;
+        font-family: "Poppins", sans-serif;
+        font-weight: 200;
+        font-size: 14px; }
+    .main__menu .menuGrid__Burger .grid-containerS {
+      display: grid;
+      max-width: 730px;
+      grid-template-columns: 3fr 1fr;
+      grid-template-rows: 0.5fr 1fr 1fr 1fr 1fr;
+      row-gap: 15px;
+      grid-auto-flow: row;
+      grid-template-areas: "Detalle Detalle" "Detalle-MB Precio-MB" "Detalle-blt Precio-blt" "Detalle-Cu Precio-Cu" "Detalle-Tq Precio-Tq"; }
+      .main__menu .menuGrid__Burger .grid-containerS .precio {
+        font-style: italic;
+        font-weight: 600;
+        text-align: end;
+        padding-right: 15px; }
+      .main__menu .menuGrid__Burger .grid-containerS .nombreMenu {
+        font-style: italic;
+        font-weight: 400;
+        color: #ffaa24;
+        font-size: 14px; }
+      .main__menu .menuGrid__Burger .grid-containerS p {
+        color: white;
+        font-family: "Poppins", sans-serif;
+        font-weight: 200;
+        font-size: 14px; }
+    .main__menu .menuGrid__Burger .Detalle {
+      grid-area: Detalle; }
+    .main__menu .menuGrid__Burger .Detalle-MB {
+      grid-area: Detalle-MB; }
+    .main__menu .menuGrid__Burger .Precio-MB {
+      grid-area: Precio-MB; }
+    .main__menu .menuGrid__Burger .Detalle-blt {
+      grid-area: Detalle-blt; }
+    .main__menu .menuGrid__Burger .Precio-blt {
+      grid-area: Precio-blt; }
+    .main__menu .menuGrid__Burger .Detalle-Cu {
+      grid-area: Detalle-Cu; }
+    .main__menu .menuGrid__Burger .Precio-Cu {
+      grid-area: Precio-Cu; }
+    .main__menu .menuGrid__Burger .Detalle-Tq {
+      grid-area: Detalle-Tq; }
+    .main__menu .menuGrid__Burger .Precio-Tq {
+      grid-area: Precio-Tq; }
+
+/**finaliza main menu**/
+/**comienza nuestros productos**/
+.containerNuestrosProductos {
+  margin-top: 40px; }
+  .containerNuestrosProductos .rowNuestrosProductos {
+    margin: 35px auto 35px auto;
+    font-weight: 600;
+    color: white; }
+    .containerNuestrosProductos .rowNuestrosProductos .nuestrosProductos__individual__texto {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      font-weight: 300; }
+    .containerNuestrosProductos .rowNuestrosProductos .nuestrosProductos__individual__imagen {
+      margin: 0 auto 0 auto;
+      width: 90%;
+      max-width: 300px;
+      justify-content: center; }
+    .containerNuestrosProductos .rowNuestrosProductos p {
+      color: white; }
+
+/**finaliza nuestros productos**/
+/**comienza pedidos**/
+.form {
+  width: 75%; }
+
+fieldset {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: 15px auto 15px auto;
+  padding: 15px 0 15px 0;
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-size: 15px;
+  color: #CCCCCC; }
+
+legend {
+  color: #4FB9AF;
+  padding: 5px 5px 2px 5px;
+  margin-bottom: 10px;
+  border-bottom: #ffaa24 3px solid; }
+
+.containerFieldset {
+  margin: 10px auto 5px 0; }
+
+label {
+  color: #CCCCCC; }
+
+textarea {
+  margin: 5px auto 5px auto;
+  width: 70%; }
+
+.boton {
+  width: 15%;
+  margin: 5px 0 5px 15px; }
+
+/**finaliza pedidos**/
+/**comienza footer**/
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  margin: 60px auto 35px auto; }
+
+.barrios-delivery {
+  display: flex;
+  justify-content: center;
+  flex-direction: row; }
+  .barrios-delivery .mapouter {
+    position: relative;
+    text-align: right;
+    height: 150px;
+    width: 150px; }
+    .barrios-delivery .mapouter .gmap_canvas {
+      overflow: hidden;
+      background: none !important;
+      height: 150px;
+      width: 150px; }
+
+.footer__datos--div {
+  display: inline-block; }
+  .footer__datos--div ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 150px;
+    list-style: none; }
+    .footer__datos--div ul li {
+      font-family: "Poppins", sans-serif;
+      color: white;
+      font-weight: 200;
+      font-size: 1rem;
+      margin-left: 2%; }
+      .footer__datos--div ul li img {
+        width: 2%;
+        margin-right: 2%; }
+
+.footer__links--iconos {
+  display: inline-block; }
+  .footer__links--iconos ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 50px; }
+    .footer__links--iconos ul li {
+      display: inline-block;
+      padding: 0 10px 0 10px; }
+
+/**finaliza footer**/
+/** comienza bootstrap nav**/
+.nav-width {
+  width: 100%; }
+
+.activeBorder {
+  border-bottom: #ffaa24 3px solid !important; }
+
+/** finaliza bootstrap nav**/
+/**comienza figuras flotantes**/
+.panceta-flotante {
+  position: fixed;
+  top: 400px;
+  left: 50px; }
+
+.pimentero-flotante {
+  position: fixed;
+  top: 50px;
+  right: 15px; }
+
+/**finaliza figuras flotantes**/
+/* comienza BARRA*/
+.barra {
+  width: 100%;
+  margin-top: 35px;
+  height: 7px;
+  background-color: #ffaa24; }
+
+/*finaliza BARRA*/
+/**comienza Mixins
+@mixin  botonEstilo ($colorFondo, $colorTexto, $anchoBoton, $altoBoton){
+    
+    width: $anchoBoton;
+    height: $altoBoton;
+    color: $colorTexto;
+    background-color: $colorFondo;
+}
+
+.boton1 {
+    @include botonEstilo($color_principal,black ,100px ,25px )
+}
+
+.boton2 {
+    @include botonEstilo(gray,black ,100px ,25px )
+}
+finaliza Mixins**/
+/**comienza mquery**/
+@media only screen and (max-width: 768px) {
+  .descripcionBurger {
+    margin-top: 25px;
+    justify-content: center; }
+  .panceta-flotante {
+    width: 20%;
+    position: fixed;
+    top: 15px;
+    left: 15px; }
+  .h1__HamburguesasSandwich, .h2__menu, .h2__pedido, .h2__nuestrosProductos {
+    font-size: 1.5rem;
+    height: 50px; }
+  .h2__menu, .h2__pedido {
+    font-size: 1rem;
+    height: 50px; }
+  .h2__nuestrosProductos {
+    font-size: 1.5rem;
+    height: 40px; }
+  .grid-container {
+    grid-template-rows: 0.5fr 1fr 1fr 1fr 1fr 1fr;
+    width: 90%; }
+  .grid-containerS {
+    grid-template-rows: 0.5fr 1fr 1fr 1fr 1fr;
+    width: 90%; }
+  .boton {
+    width: 50%; }
+  .pimentero-flotante {
+    width: 15%;
+    position: fixed;
+    top: 50px;
+    right: 15px; }
+  .h2__menu, .h2__pedido {
+    font-size: 2rem; }
+  .h3__nuestrosProductos {
+    text-align: center;
+    margin: 0 auto 15px auto; }
+  .boton {
+    width: 50%; }
+  .nuestrosProductos__individual__imagen {
+    display: flex;
+    justify-content: center;
+    margin: 35px auto 15px auto; }
+  .nuestrosProductos__individual__texto {
+    display: flex;
+    justify-content: center;
+    margin: 15px auto 15px auto;
+    width: 95%;
+    text-align: center; } }
+
+@media only screen and (max-width: 991px) {
+  main {
+    padding-bottom: 30px; }
+  .panceta-flotante {
+    width: 15%;
+    position: fixed;
+    top: 45px;
+    left: 15px; }
+  .activeBorder {
+    border-bottom: black 3px solid !important; }
+  .boton {
+    width: 35%; } }
+
+/**finaliza mquery**/
